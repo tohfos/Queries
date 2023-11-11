@@ -1,8 +1,6 @@
 --Query 1
 
 
---hii
---hello
 
 
 -- latency average = 0.647 ms
