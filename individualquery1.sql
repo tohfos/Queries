@@ -19,9 +19,6 @@ select * from "Track" where "Composer" is null;
 -- latency average = 0.566 ms
 -- tps = 1767.237871 (including connections establishing)
 -- tps = 1767.304355 (excluding connections establishing)
-
--- total_exec_time = 194845.15346700174
--- total_plan_time = 6832.469555999914
 -- idx_scan  = 100001
 -- idx_tup_read = 97800978
 -- idx_tup_fetch = 97800978

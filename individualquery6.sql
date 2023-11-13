@@ -9,4 +9,11 @@
 
 -- this query retrieves way too many records
 select * from "Track" where "UnitPrice" = 0.99;
+-- latency average = 2.392 ms
+-- tps = 418.004652 (including connections establishing)
+-- tps = 418.013818 (excluding connections establishing)
+
+
+
+
 

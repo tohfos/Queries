@@ -14,9 +14,7 @@ inner join "Track" t on t."TrackId" = pt."TrackId" where t."Composer" = 'AC/DC';
 -- latency average = 0.560 ms
 -- tps = 1785.313442 (including connections establishing)
 -- tps = 1785.376543 (excluding connections establishing)
---total_plan_time=19808.908197000153
---total_exec_time=94725.06378799869
 --idx_scan = 100000
---idx_tup_read =   800000
+--idx_tup_read = 800000
 -- idx_tup_fetch = 0
 

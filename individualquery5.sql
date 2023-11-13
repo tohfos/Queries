@@ -15,12 +15,9 @@ select * from "Track" where "UnitPrice" != 0.99;
 -- latency average = 0.221 ms
 -- tps = 4527.795857 (including connections establishing)
 -- tps = 4528.820393 (excluding connections establishing)
-
-
 --idx_scan = 100000
 --idx_tup_fetch =21300000 
 --ind_tup_read = 21300000
---total_plan_time = 4265.659095999943
---total_exec_time = 67115.36139700029
+
 
 

@@ -12,3 +12,14 @@ select "FirstName", "LastName", "InvoiceId", "InvoiceDate", "BillingAddress"
 from "Invoice" i
 join "Customer" c on i."CustomerId" = c."CustomerId"
 where "BillingCountry" = 'Brazil';
+
+
+-- latency average = 0.137 ms
+-- tps = 7279.870214 (including connections establishing)
+-- tps = 7280.845166 (excluding connections establishing)
+--create index idx_BillingCoun on "Invoice" using hash("BillingCountry") 
+
+
+--idx_scan = 100000
+--idx_tup_read = 3500000
+--idx_tup_fetch = 0
