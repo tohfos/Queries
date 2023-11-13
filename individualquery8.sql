@@ -12,9 +12,10 @@ inner join "Track" t on t."TrackId" = pt."TrackId" inner join "Album" a on a."Al
 
 -- after running the query and observing the returned data we noticed that the index will never be used as no records satisfy this query , however for future DB insertions we recommend to use the index below
 
---create index idx_playlistName on "Playlist" using HASH("Name")
+--create index idx_playlistName on "Playlist" using HASH("Name") 
 
--- we used HASH index over partial in case any future query looked for anything other than 'Classic'
+
+-- we used HASH index over partial in case any future query looked for anything other than 'Classic' , also it is good practice to place the index on the independant predicate that we use on our condition
 
 -- latency average = 0.589 ms
 -- tps = 1696.629084 (including connections establishing)
