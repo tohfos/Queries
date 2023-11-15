@@ -14,6 +14,7 @@ inner join "Track" t on t."TrackId" = pt."TrackId" inner join "Album" a on a."Al
 where ar."Name" = 'Eric Clapton';
  
  --create index on "Track" using BTREE ("AlbumId")
+ --we chose the AlbumId as an index as it  helps speed up the process of finding tracks based on the album they belong to.which improves the overall performance of your query, especially when looking for songs by a specific artist.
 -- latency average = 1.352 ms
 --tps = 739.665892 (including connections establishing)
 --tps = 739.681549 (excluding connections establishing)
