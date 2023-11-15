@@ -20,6 +20,4 @@ where "BillingCountry" = 'Brazil';
 --create index idx_BillingCoun on "Invoice" using hash("BillingCountry") 
 
 
---idx_scan = 100000
---idx_tup_read = 3500000
---idx_tup_fetch = 0
+--we created a hash index on BillingCountry column of Invoice table as it will help us get direct quick access to the rows with BillingCountry = 'Brazil' and hence the query will be faster, which was actually reflected in the statistics obtained after running the query with the index created. The latency average decreased and tps  increased significantly after creating the index.Meaning our index performed well not to mention the index statistics indicated usage of it. 
