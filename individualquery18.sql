@@ -20,3 +20,13 @@ join "Customer" c
 on c."CustomerId" = i."CustomerId"
 where c."FirstName" = 'Robert'
 group by c."CustomerId",c."FirstName",c."LastName";
+
+
+--create index idx2 on "InvoiceLine" using HASH("InvoiceId");
+-- index on invoiceID using HASH as opposed to the default index on the PK which is BTREE better as we use the values from the invoice table in the aggregate function.
+
+-- latency average = 0.319 ms
+-- tps = 3131.423762 (including connections establishing)
+-- tps = 3131.661593 (excluding connections establishing)
+
+
