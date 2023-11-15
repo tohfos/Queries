@@ -1,0 +1,1 @@
+ CREATE index idx_artist_id ON "Album" ("ArtistId");

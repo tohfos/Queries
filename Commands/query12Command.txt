@@ -1,0 +1,1 @@
+create index idx_BillingCoun on "Invoice" using hash("BillingCountry") 

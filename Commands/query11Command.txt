@@ -1,0 +1,2 @@
+create index idx_TRackId on "PlaylistTrack" using HASH("TrackId");
+create index idx_ALbum on "Track" using HASH("AlbumId");

@@ -1,0 +1,3 @@
+
+
+create index idx2 on "InvoiceLine" using HASH("InvoiceId");

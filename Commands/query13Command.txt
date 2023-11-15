@@ -1,0 +1,3 @@
+SUGGESTION COMMAND
+
+create index idx_Customer on "Customer" ("Country") where "Country" = 'Brazil'

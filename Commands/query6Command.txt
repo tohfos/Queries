@@ -1,0 +1,3 @@
+SUGGESTION COMMAND
+
+create index UnitPrice2 on "Track"("UnitPrice") where ("UnitPrice")= 0.99
